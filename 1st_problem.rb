@@ -3,6 +3,5 @@
 
 # result = (1...1000).select{|e| e % 3 == 0 || e % 5 == 0 }.inject(0){|result, element| result + element} => first iteration: result = 0, element = 1
 # result = (1...1000).select{|e| e % 3 == 0 || e % 5 == 0 }.inject{|result, element| result + element} => first iteration: result = 1, element = 2
-result = (1...1000).select{|e| e % 3 == 0 || e % 5 == 0 }.inject(&:+)
+result = (1...1000).select { |e| e % 3 == 0 || e % 5 == 0 }.inject(&:+)
 print result
-
